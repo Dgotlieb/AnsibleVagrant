@@ -30,7 +30,8 @@ A simple Vagrantfile for Ansible
 2. Change the IP address to the IP address of the machine/s you want to control.
 3. Change the user name to the user name of the machine/s you want to control
 4. in case, the machine uses python3, you will need to add the python interpreter version to your host/s:
-    18.224.165.27 ansible_ssh_private_key_file=private.pem ansible_user=ec2-user **ansible_python_interpreter=python3**
+ 
+ 192.168.99.100 ansible_ssh_private_key_file=private.pem ansible_user=ec2-user **ansible_python_interpreter=python3**
 
  #
  
