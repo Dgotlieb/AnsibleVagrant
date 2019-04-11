@@ -18,8 +18,7 @@ A simple Vagrantfile for Ansible
 ### Initial setup:
 
     $ git clone https://github.com/Dgotlieb/AnsibleVagrant.git 
-    $ cd AnsibleVagrant
-    $ cd Ansible
+    $ cd AnsibleVagrant-master/Ansible/
     $ vagrant up
     
     
