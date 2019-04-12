@@ -17,8 +17,9 @@ A simple Vagrantfile for Ansible
 
 ### Initial setup:
 1. Clone this repository:
+
     $ git clone https://github.com/Dgotlieb/AnsibleVagrant.git 
-2. cd to internal folder:    
+2. Change directory to internal folder:    
     $ cd AnsibleVagrant-master/Ansible/
 3. In **keys** folder - replace the priavte key with your server key (e.g. EC2)
 4. In **hosts** folder:
