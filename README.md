@@ -16,33 +16,25 @@ A simple Vagrantfile for Ansible
 # 
 
 ### Initial setup:
-
+1. Clone this repository:
     $ git clone https://github.com/Dgotlieb/AnsibleVagrant.git 
+2. cd to internal folder:    
     $ cd AnsibleVagrant-master/Ansible/
-    **Replace the priavte key in keys folder**
+3. In **keys** folder - replace the priavte key with your server key (e.g. EC2)
+4. In **hosts** folder:
+    * Change the IP address to the IP address of the machine/s you want to control.
+    * Change the user name to the user name of the machine/s you want to control
+5. Start nachine:
     $ vagrant up
-    
-    
-### How to use:
- 
-##### Hosts / Inventory
+6. SSH into machine
+    $ vagrant ssh
+7. Run:
+    $ sudo ansible all -m ping
+#
 
-1. Go to /etc/ansible/hosts.
-2. Change the IP address to the IP address of the machine/s you want to control.
-3. Change the user name to the user name of the machine/s you want to control
-4. in case, the machine uses python3, you will need to add the python interpreter version to your host/s:
- 
+### Importana note:
+In case, the machine uses python3, you will need to add the python interpreter version to your host/s:
  192.168.99.100 ansible_ssh_private_key_file=private.pem ansible_user=ec2-user **ansible_python_interpreter=python3**
 
- #
- 
-##### Keys: 
-1. Go to /etc/ansible/keys.
-2. Replace the file private.pem with the private key of the machine/s you want to control.
-3. Run: $ chmod 400 private.pem
-
-#### Run: **ansible all -m ping**
- 
- #
  
 
