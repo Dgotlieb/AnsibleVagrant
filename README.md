@@ -17,8 +17,7 @@ A simple Vagrantfile for Ansible
 
 ### Initial setup:
 1. Clone this repository:
-
-    $ git clone https://github.com/Dgotlieb/AnsibleVagrant.git 
+    git clone https://github.com/Dgotlieb/AnsibleVagrant.git 
     
 2. Change directory to internal folder:    
 
