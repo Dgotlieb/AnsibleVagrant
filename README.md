@@ -18,11 +18,11 @@ A simple Vagrantfile for Ansible
 ### Initial setup:
 1. Clone this repository:
 
-    $git clone https://github.com/Dgotlieb/AnsibleVagrant.git 
+    **$ git clone https://github.com/Dgotlieb/AnsibleVagrant.git**
     
 2. Change directory to internal folder:    
 
-    $ cd AnsibleVagrant-master/Ansible/
+    **$ cd AnsibleVagrant-master/Ansible/**
     
 3. In **keys** folder - replace the priavte key with your server key (e.g. EC2)
 4. In **hosts** folder:
@@ -30,15 +30,15 @@ A simple Vagrantfile for Ansible
     * Change the user name to the user name of the machine/s you want to control
 5. Start nachine:
 
-    $ vagrant up
+    **$ vagrant up**
     
 6. SSH into machine
 
-    $ vagrant ssh
+    **$ vagrant ssh**
     
 7. Run:
 
-    $ sudo ansible all -m ping
+    **$ sudo ansible all -m ping**
     
 #
 
