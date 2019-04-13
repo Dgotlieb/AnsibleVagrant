@@ -42,8 +42,11 @@ A simple Vagrantfile for Ansible
     
 #
 
-### Importana note:
-In case, the machine uses python3, you will need to add the python interpreter version to your host/s:
+### Importana notes:
+1. If the machine was already provisioned (you ran vagrant up in the past), you will need to override the **private.pem** located inisde **/etc** folder by running: $ sudo mv /etc/keys/private.pem /etc/private.pem
+(This is a nasty workaround for beating non-posix systems which chmoding won't work e.g. windows).
+
+2. In case, the machine uses python3, you will need to add the python interpreter version to your host/s:
  192.168.99.100 ansible_ssh_private_key_file=private.pem ansible_user=ec2-user **ansible_python_interpreter=python3**
 
  
