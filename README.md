@@ -43,7 +43,7 @@ A simple Vagrantfile for Ansible
 #
 
 ### Importana notes:
-1. If the machine was already provisioned (you ran vagrant up in the past), you will need to override the **private.pem** located inisde **/etc** folder by running: $ sudo mv /etc/keys/private.pem /etc/private.pem
+1. If the machine was already provisioned (you ran vagrant up in the past), you will need to override the **private.pem** located inisde **/etc** folder by running: $ **sudo mv /etc/keys/private.pem /etc/private.pem**
 (This is a nasty workaround for beating non-posix systems which chmoding won't work e.g. windows).
 
 2. In case, the machine uses python3, you will need to add the python interpreter version to your host/s:
