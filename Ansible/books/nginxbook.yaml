@@ -3,6 +3,10 @@
   tasks:
     - name: ensure nginx is at the latest version
       apt: name=nginx state=latest
+    - name: Update APT package manager repositories cache
+      become: true
+      apt:
+        update_cache: yes
     - name: start nginx
       service:
           name: nginx
