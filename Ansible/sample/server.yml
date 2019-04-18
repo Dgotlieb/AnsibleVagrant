@@ -1,5 +1,4 @@
 ---
-- hosts: local
-  connection: local
+- hosts: all
   roles:
     - nginx
